@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
-    <link rel="stylesheet" href="/estilos.css">
     <link rel="stylesheet" href="/Starcraft/estilos_starcraft.css">
+    <link rel="stylesheet" href="/Street Fighter/Estilos.css">
+    <link rel="stylesheet" href="/Pokemon/pokemon.css">
+    <link rel="stylesheet" href="/estilos_principal.css">
     <script src="https://kit.fontawesome.com/6e36fc5c8e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!--Header y nav-->
+
     <header>
-        <nav class="navbar">
-            <ul>
+        <nav class="navbar_principal">
+            <ul class="ul_star">
                 <div class="logo_nav">
-                    <img src="/img/logo_trial.png" alt="">
+                    <img src="/img/logo_trialsf.png" alt="">
                 </div>
 
                 <div>
-                    <h1>SOLNA</h1>
+                    <h1>Solna Games</h1>
                 </div>
 
                 <div class="nav_items">
-                    <li><a href="#">Log in</a></li>
-                    <li class="dropdown">
+                    
+                    <li class="dropdown_principal">
                         <a href="#">Juegos</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">Pokemon</a></li>
+                        <ul class="dropdown-menu_principal">
+                            <li><a href="/Pokemon/index_pokemon.html">Pokemon</a></li>
                             <li><a href="/Starcraft/index_starcraft.html">Starcraft II</a></li>
-                            <li><a href="">Street Fighter VI</a></li>
+                            <li><a href="/Street Fighter/index_streetvi.html">Street Fighter VI</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="/Formulario/index_form.html">Log in</a>
                     </li>
                     <li>
                         <a href="https://www.blizzard.com/es-es/company/contact" target="_blank">Contacto</a>
@@ -41,7 +49,9 @@
     </header>
 
     <main>
-        
+
+        <!--Main-->
+
         <div class="galeria">
             <img src="/img/pokemon.avif" alt="">
             <img src="/img/streetfighterLogo.jpeg" alt="">
@@ -50,15 +60,17 @@
 
     </main>
 
+    <!--Footer-->
+
     <footer class="pie_pagina">
 
         <div class="grupo1">
             <div class="box">
+
                 <figure>
-                    <a href="#">
-                        <img src="/img/logo_trial.png" alt="">
-                    </a>
+                    <img src="/img/logo_trialsf.png" alt="">
                 </figure>
+
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
@@ -78,7 +90,7 @@
         </div>
 
         <div class="grupo2">
-            <p>&copy; 2024, SOLNA - Todos los Derechos Reservados.</p>
+            <p>&copy; 2024, Grupo 3 - Todos los Derechos Reservados.</p>
         </div>
     </footer>
 
