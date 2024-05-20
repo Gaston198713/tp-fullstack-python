@@ -8,11 +8,19 @@ body {
     background: linear-gradient(rgb(102, 121, 168), rgb(41, 70, 116));
 }
 
+/*Header y nav*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px;
     background: linear-gradient(to top, rgb(3, 13, 24), hwb(210 7% 73%));
 }
@@ -26,7 +34,7 @@ nav h1 {
 
 
 nav ul .logo_nav img {
-    max-width: 80px;
+    max-width: 100px;
     margin: 10px;
     margin-left: 20px;
 }
@@ -51,6 +59,8 @@ nav ul .logo_nav {
     max-width: 300px;
     text-align: right;
 }
+
+/*Menu dropdown*/
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -83,6 +93,8 @@ main {
     flex-direction: column;
 }
 
+/*Img principal*/
+
 .contenedor_logo {
     display: flex;
     justify-content: center;
@@ -109,6 +121,8 @@ main {
 .logo_principal img:hover {
     border: 5px solid aqua;
 }
+
+/*Razas*/
 
 .razas {
     text-align: center;
@@ -260,6 +274,8 @@ main {
     font-size: 15px;
 }
 
+/*Unidades de combate*/
+
 .card {
     width: 80%;
     justify-content: space-evenly;
@@ -331,6 +347,8 @@ main {
     font-weight: bolder;
 }
 
+/*Fotos y videos*/
+
 .title_fotos,
 .title_videos {
     text-align: center;
@@ -343,6 +361,7 @@ main {
 .contenedor_fotos,
 .contenedor_videos {
     display: flex;
+    justify-content: center;
     gap: 4px;
     width: 90%;
     flex-wrap: wrap;
@@ -357,77 +376,112 @@ main {
 }
 
 .contenedor_fotos img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
+/*Footer*/
 
-.pie_pagina {
+/* footer pie de pagina  */
+
+.container_footer {
     width: 100%;
-    background: linear-gradient(to top, #030d18, #122c46)
+    padding: 40px 0;
+    background: linear-gradient(to top, #030d18, #122c46);
+    margin-top: 40px;
 }
 
-.pie_pagina .grupo1 {
-    width: 100%;
+.container_footer footer {
+    max-width: 1200px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    padding: 45px 0px;
 }
 
-.pie_pagina .grupo1 .box figure {
-    width: 100%;
-    height: 100%;
+.container_footer footer .logo_footer {
+    text-align: center;
+}
+
+.container_footer footer .logo_footer img {
+    width: 400px;
+}
+
+/* 
+      Iconos */
+.container_footer footer .redes_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container_footer footer .redes_footer .icon_redes {
+    font-size: 20px;
+    margin: 20px;
+    background-color: #e2e0e2;
+    width: 23px;
+    height: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
 }
 
-.pie_pagina .grupo1 .box figure img {
-    width: 250px;
+.container_footer footer .redes_footer .fa-facebook {
+    background-color: #050505;
+    color: #fff;
+
 }
 
-.pie_pagina .grupo1 .box h2 {
+
+.container_footer footer .redes_footer .fa-facebook:hover {
+    background-color: #1403ff;
+    color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-google-plus-g {
+    background-color: #111111;
+    color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-google-plus-g:hover {
+    background-color: #ff3503;
+    
+
+}
+
+.container_footer footer .redes_footer .fa-x-twitter {
+    background-color: #0f0f0f;
+    color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-x-twitter:hover {
+    background-color: #ffffff;
+    color: #0f0f0f;
+
+}
+
+.container_footer footer .redes_footer .fa-instagram {
+    background: black;
+    color: white
+}
+
+.container_footer footer .redes_footer .fa-instagram:hover {
+    background: linear-gradient(#fcde30, #e9712a, #d2313b, #ae4198, #7540a1, #5443ab);
+    color: rgb(248, 245, 245);
+
+}
+
+.container_footer footer h4 {
     color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie_pagina .grupo1 .box a {
-    color: #fff;
-    margin: 5px;
-    padding: 5px;
-    font-size: medium;
-    display: block;
-    text-decoration: none;
-}
-
-.pie_pagina .grupo1 .red_social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #030d18;
+    font-size: 15px;
     text-align: center;
-    transition: all 500ms ease;
+    margin-top: 10px;
 }
 
-.pie_pagina .grupo1 .red_social a:hover {
-    color: rgb(11, 185, 238);
-}
 
-.pie_pagina .grupo2 {
-    background-color: #030d18;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-    font-size: small;
-    font-weight: bolder;
-}
+/*Diseño responsive*/
 
 @media only screen and (max-width: 768px) {
     .contenedor_fotos {
