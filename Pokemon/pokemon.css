@@ -1,0 +1,250 @@
+body {
+  background-color: rgb(233, 200, 116);
+  color: rgb(163, 67, 67);
+  margin: 0;
+}
+
+.nav_poke .ul_poke {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  background: linear-gradient(to top, rgb(226, 61, 50), #c9564e);
+}
+
+.nav_poke img {
+  max-width: 150px;
+}
+
+.nav_poke h1 {
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+.nav_poke .ul_poke li {
+  display: inline-block;
+}
+
+.nav_poke .ul_poke li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.nav_poke_items li a:hover {
+  background-color: #e9c874;
+}
+
+.nav_poke_items {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: rgb(251, 248, 221);
+  padding: 10px;
+  width: 1800;
+}
+
+.grid-item {
+  background-color: rgba(233, 200, 116, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.grid-item img {
+  margin-top: 80px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.grid-container2 {
+  display: grid;
+  background-color: rgb(251, 248, 221);
+}
+
+.item6 {
+  grid-column: 3;
+  grid-row: 3;
+  border-top: solid rgb(251, 248, 221);
+  border-bottom: rgb(251, 248, 221) solid;
+  border-width: 10px;
+}
+
+.item7 {
+  grid-column: 3;
+  grid-row: 4;
+  border-bottom: solid rgb(251, 248, 221);
+  border-width: 10px;
+}
+
+.item8 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#play {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#titulo2 {
+  text-align: center;
+  text-decoration: none;
+}
+
+.h1_poke{
+  text-align: center;
+}
+
+.h2_poke {
+  text-decoration: underline red;
+}
+
+.h3_poke {
+  text-decoration: underline red;
+
+}
+
+.Logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+
+/* footer pie de pagina  */
+
+.container_footer {
+  width: 100%;
+  padding: 40px 0;
+  background: linear-gradient(to top, rgb(226, 61, 50), #c9564e);
+  margin-top: 40px;
+}
+
+.container_footer footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container_footer footer .logo_footer {
+  text-align: center;
+}
+
+.container_footer footer .logo_footer img {
+  width: 200px;
+}
+
+/* 
+    Iconos */
+.container_footer footer .redes_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container_footer footer .redes_footer .icon_redes {
+  font-size: 20px;
+  margin: 20px;
+  background-color: #e2e0e2;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+}
+
+.container_footer footer .redes_footer .fa-facebook {
+  background-color: #050505;
+  color: #fff;
+
+}
+
+
+.container_footer footer .redes_footer .fa-facebook:hover {
+  background-color: #1403ff;
+  color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-google-plus-g {
+  background-color: #111111;
+  color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-google-plus-g:hover {
+  background-color: #ff3503;
+  color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-x-twitter {
+  background-color: #0f0f0f;
+  color: #fff;
+
+}
+
+.container_footer footer .redes_footer .fa-x-twitter:hover {
+  background-color: #ffffff;
+  color: #0f0f0f;
+
+}
+
+.container_footer footer .redes_footer .fa-instagram {
+  background: black;
+  color: white
+}
+
+.container_footer footer .redes_footer .fa-instagram:hover {
+  background: linear-gradient(#fcde30, #e9712a, #d2313b, #ae4198, #7540a1, #5443ab);
+  color: rgb(248, 245, 245);
+
+}
+
+.container_footer footer h4 {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/*Diseño responsive*/
+
+@media only screen and (max-width: 768px) {
+  .contenedor_fotos {
+    flex: 4 2 25%;
+  }
+}
+
+#saludo {
+  width: 100%;
+}
+
+#saludo {
+  width: 100%;
+}
